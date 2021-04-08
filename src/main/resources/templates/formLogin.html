@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="~{base :: head}"></head>
+<body>
+
+		<div class="card border-primary mx-auto m-5" style="width: 18rem; position: center; ">
+			<div class="card-body">
+				<form th:action="@{/login}" method="post">
+					<div class="row">
+						<div class="mb-3 col-auto">
+							<label for="exampleInputEmail1" class="form-label">E-mail:
+							</label> <input name="username" type="email" class="form-control"
+								id="exampleInputEmail1">
+						</div>
+					</div>
+					<div class="row">
+						<div class="mb-3 col-auto">
+							<label for="exampleInputPassword1" class="form-label">Senha:
+							</label> <input name="password" type="password" class="form-control"
+								id="exampleInputPassword1">
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Entrar</button>
+				</form>
+			</div>
+		</div>
+
+</body>
+</html>
